@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Exemplo 1</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<style>
+			.cabecalho{
+				padding: 40px;
+				background-color: #311C74 ;
+				margin-bottom: 20px;
+				width: 100%;
+				color: white;
+			}
+
+			.capital{
+				margin-top: 20px;
+			}
+
+			.container{
+				background-color:#FFE4C5;
+			}
+		</style>
+
+		<script>
+			'use strict';
+			function verificaCapital(){
+				var estado = document.getElementById('estado').value;
+				let mostrarCapital;
+				
+				if (estado.toLowerCase() == "acre"){
+					mostrarCapital = "Rio Branco";
+				}
+				else if (estado.toLowerCase() == "alagoas"){
+					mostrarCapital = "Maceió";
+				}
+				else if (estado.toLowerCase() == "amapa" || estado.toLowerCase() == "amapá"){
+					mostrarCapital = "Macapá";
+				}
+				else if (estado.toLowerCase() == "amazonas"){
+					mostrarCapital = "Manaus";
+				}
+				else if (estado.toLowerCase() == "bahia"){
+					mostrarCapital = "Salvador";
+				}
+				else if (estado.toLowerCase() == "ceara" || estado.toLowerCase() == "ceará"){
+					mostrarCapital = "Fortaleza";
+				}
+				else if (estado.toLowerCase() == "espírito santo" || estado.toLowerCase() == "espirito santo"){
+					mostrarCapital = "Vitória";
+				}
+				else if (estado.toLowerCase() == "goias" || estado.toLowerCase() == "goiás"){
+					mostrarCapital = "Goiânia";
+				}
+				else if (estado.toLowerCase() == "maranhao" || estado.toLowerCase() == "maranhão"){
+					mostrarCapital = "São Luís";
+				}
+				else if (estado.toLowerCase() == "mato grosso"){
+					mostrarCapital = "Cuiabá";
+				}
+				else if (estado.toLowerCase() == "mato grosso do sul"){
+					mostrarCapital = "Campo Grande";
+				}
+				else if (estado.toLowerCase() == "minas gerais"){
+					mostrarCapital = "Belo Horizonte";
+				}
+				else if (estado.toLowerCase() == "para" || estado.toLowerCase() == "pará"){
+					mostrarCapital = "Belém";
+				}
+				else if (estado.toLowerCase() == "paraiba" || estado.toLowerCase() == "paraíba"){
+					mostrarCapital = "João Pessoa";
+				}
+				else if (estado.toLowerCase() == "parana" || estado.toLowerCase() == "paraná"){
+					mostrarCapital = "Curitiba";
+				}
+				else if (estado.toLowerCase() == "pernambuco"){
+					mostrarCapital = "Recife";
+				}
+				else if (estado.toLowerCase() == "piaui" || estado.toLowerCase() == "piauí"){
+					mostrarCapital = "Teresina";
+				}
+				else if (estado.toLowerCase() == "rio de janeiro"){
+					mostrarCapital = "Rio de Janeiro";
+				}
+				else if (estado.toLowerCase() == "rio grande do norte"){
+					mostrarCapital = "Natal";
+				}
+				else if (estado.toLowerCase() == "rio grande do sul"){
+					mostrarCapital = "Porto Alegre";
+				}
+				else if (estado.toLowerCase() == "rondonia" || estado.toLowerCase() == "rondônia"){
+					mostrarCapital = "Porto Velho";
+				}
+				else if (estado.toLowerCase() == "roraima"){
+					mostrarCapital = "Boa Vista";
+				}
+				else if (estado.toLowerCase() == "santa catarina"){
+					mostrarCapital = "Florianópolis";
+				}
+				else if (estado.toLowerCase() == "sao paulo" || estado.toLowerCase() == "são paulo"){
+					mostrarCapital = "São Paulo";
+				}
+				else if (estado.toLowerCase() == "sergipe"){
+					mostrarCapital = "Aracaju";
+				}
+				else if (estado.toLowerCase() == "tocantins"){
+					mostrarCapital = "Palmas";
+				}
+				else{
+					alert("Valor inválido! Verifique se foi digitado uma capital existente e se colocou os espaços entre as palavras!"); 
+				}
+				
+				document.getElementById("mostrarCapital").value = mostrarCapital;
+				
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="container">
+			
+			<div class ="row">
+				<div align="center" class="cabecalho">
+					<h1>Olá, aqui você poderá conhecer as capitais do Brasil!</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Digite o Estado que deseja saber a capital: </h3>
+				</div>
+				<div class="col-md-4">
+					<form>
+						<input type="text" id="estado" placeholder="Estado" class="form-control">
+					</form>
+				</div>
+				<div class="col-md-1">
+					<button class="btn btn-lg btn-primary pull-right" type="button" onclick="verificaCapital()";>Verificar</button>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<img src="mapa.jpg"  width="100%">
+					</div>
+					<div class="col-md-4 capital well">
+						Capital: <input type="text" id="mostrarCapital" class="form-control" readonly>
+					</div>				
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

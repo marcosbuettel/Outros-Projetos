@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Corrida Maluca</title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">	
+		<script src="js/jquery-3.5.1.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+
+	<body>
+		<div class="main">
+			<h1 style="font-size: 25px; margin: 20px">CORRIDA MALUCA</h1>
+
+			<h2 style="font-size: 20px; margin: 20px">Aposte em um dos carros abaixo e veja se ele consegue vencer a corrida!</h2>
+
+			<div class="carros">
+				<div class="boxCarros">
+					<img src="images/carro1.jpg"><br>
+					<input id="carro1" type="radio" name="carro">Máquina do Mal
+				</div>
+
+				<div class="boxCarros">
+					<img src="images/carro2.jpg"><br>
+					<input id="carro2" type="radio" name="carro">CUPÊ Mal-Assombrado
+				</div>
+
+				<div class="boxCarros">
+					<img src="images/carro3.jpg"><br>
+					<input id="carro3" type="radio" name="carro">Penélope Charmosa
+				</div>
+
+				<div class="boxCarros">
+					<img src="images/carro4.jpg"><br>
+					<input id="carro4" type="radio" name="carro">Carroça a Vapor
+				</div>
+
+				<div class="boxCarros">
+					<img src="images/carro5.jpg"><br>
+					<input id="carro5" type="radio" name="carro">Carrão Aerodinâmico
+				</div>
+
+				<div class="boxCarros">
+					<img src="images/carro6.jpg"><br>
+					<input id="carro6" type="radio" name="carro">Carro-Tronco
+				</div>
+
+				<a href="#pistaDeCorrida" class="pista"><button class="iniciaCorrida">Iniciar corrida!</button></a>
+				<a href="index.html"><button>Reiniciar</button></a>
+			</div>
+		</div><!-- FIM DO MAIN -->
+
+		<div class="pista">
+			<div id="pistaDeCorrida" class="pistaDeCorrida">
+				
+				<p>Chegada</p>
+				
+				<div class="designPista">
+
+					<div class="pistaInicio">
+						<div class="boxPista">
+							<img src="images/carro1.jpg">
+						</div>
+
+						<div class="boxPista">
+							<img src="images/carro2.jpg">
+						</div>
+
+						<div class="boxPista">
+							<img src="images/carro3.jpg">
+						</div>
+
+						<div class="boxPista">
+							<img src="images/carro4.jpg">
+						</div>
+
+						<div class="boxPista">
+							<img src="images/carro5.jpg">
+						</div>
+
+						<div class="boxPista">
+							<img src="images/carro6.jpg">
+						</div>
+					</div>
+					<div class="chegada">
+						<img src="images/chegada.jpg">
+						<img src="images/chegada.jpg">
+						<img src="images/chegada.jpg">
+						<img src="images/chegada.jpg">
+						<img src="images/chegada.jpg">
+						<img src="images/chegada.jpg">
+					</div>
+				</div>	<!-- FIM PISTA DE CORRIDA -->	
+			</div>
+		</div>
+	</body>
+
+</html>

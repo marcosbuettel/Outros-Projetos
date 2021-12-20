@@ -1,0 +1,111 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #D1E6F1;
+}
+
+h1, h2{
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+}
+
+.carros{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.boxCarros{
+	margin-top: 60px;
+	width: 33.33%;
+	padding: 10px 50px;
+}
+
+.boxCarros img{
+	width: 100%;
+	height: 100%;
+	border: black solid 2px;
+}
+
+.boxCarros input{
+	margin-right: 10px;
+}
+
+button{
+	margin: 70px auto;
+	background-color: #3069EC;
+	color: white;
+	border: none;
+	border-radius: 50px;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+a{
+	margin: 0 auto;
+}
+
+.pistaDeCorrida{
+	display: none;
+	padding: 0 2%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.pistaDeCorrida p{
+	position: absolute; 
+	right: 227px; 
+	top: -39px; 
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.designPista{	
+	margin: 0 auto;
+	border: black 2px solid;
+	display: flex;
+	width: 800px;
+}
+
+.pistaInicio{
+	width: 700px;
+	background-color: #ccc;
+}
+
+.chegada{
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+}
+
+.chegada img{
+	width: 100%;
+	height: 92px;
+}
+
+.boxPista{
+	width: 100%;
+	border-bottom: 2px solid black;
+}
+
+
+.boxPista:last-child{
+	border-bottom: none
+}
+
+.boxPista img{
+	margin-bottom: -4px;
+	width: 150px;
+	height: 90px;
+}

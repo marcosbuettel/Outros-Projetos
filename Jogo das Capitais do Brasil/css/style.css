@@ -1,0 +1,25 @@
+body, html{
+	height:100%;
+}
+
+.container{
+	background-color:#899EBF ;
+}
+
+.cabecalho{
+	background-color:#36445A;
+	padding-bottom: 20px;
+}
+
+.terminar{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.cron{
+	background-color: white;
+	color: black;
+	margin-left: 20px;
+	border: groove gray 5px;
+	padding: 20px;
+}

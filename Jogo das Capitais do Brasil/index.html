@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Jogo</title>
+		<meta charset="utf-8">
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+		<script src="js/main.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="cabecalho">
+				<h1 style="color:#DDE2EB; text-align: center;padding: 40px; font-size: 30px; ">Descubra as capitais do Brasil antes do termpo terminar para ganhar!</h1>
+				<div class="row">
+					<div class="col-md-4">
+						<h4 style="color:#DDE2EB; padding: 10px">Selecione uma dificuldade e clique em começar para iniciar o jogo e a contagem do tempo:</h4>
+					</div>
+						<form>
+							<select id="dificuldade">
+								<option value="1">Fácil (15 minutos)</option>
+								<option value="2">Normal (10 minutos)</option>
+								<option value="3">Difícil (5 minutos)</option>
+							</select>
+							<button onclick="iniciaJogo() "style="margin-left:5px" id="iniciarjogo" type="button" class="btn btn-lg btn-primary pull-right">COMEÇAR</button>
+						
+							<span class="cron" id="cronometro">TEMPO</span>
+						</form>
+						
+					
+				</div>
+				
+			</div><!--fim do cabeçalho-->
+
+			<div class="meio row">
+				
+				<div class="col-md-4">					
+					<span>Acre:</span>
+					<span id="rp1"></span><br>
+					<input id="cap1" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+					
+					<span>Alagoas:</span>
+					<span id="rp2"></span><br>
+					<input id="cap2" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+
+					<span>Amapá:</span>
+					<span id="rp3"></span><br>
+					<input id="cap3" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+					
+					<span>Amazonas:</span>
+					<span id="rp4"></span><br>
+					<input id="cap4" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+
+					<span>Bahia:</span>
+					<span id="rp5"></span><br>
+					<input id="cap5" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+					
+					<span>Ceará:</span>
+					<span id="rp6"></span><br>
+					<input id="cap6" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+
+					<span>Espírito Santo:</span>
+					<span id="rp7"></span><br>
+					<input id="cap7" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+					
+					<span>Goiás:</span>
+					<span id="rp8"></span><br>
+					<input id="cap8" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+
+					<span>Maranhão:</span>
+					<span id="rp9"></span><br>
+					<input id="cap9" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+				</div>
+				
+				<div class="col-md-4">					
+					<span>Mato Grosso:</span>
+					<span id="rp10"></span><br>
+					<input id="cap10" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+					
+					<span>Mato Grosso do Sul:</span>
+					<span id="rp11"></span><br>
+					<input id="cap11" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+					
+					<span>Minas Gerais:</span>
+					<span id="rp12"></span><br>
+					<input id="cap12" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+					
+					<span>Pará:</span>
+					<span id="rp13"></span><br>
+					<input id="cap13" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+					
+					<span>Paraíba:</span>
+					<span id="rp14"></span><br>
+					<input id="cap14" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+
+					<span>Paraná:</span>
+					<span id="rp15"></span><br>
+					<input id="cap15" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+					
+					<span>Pernambuco:</span>
+					<span id="rp16"></span><br>
+					<input id="cap16" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+
+					<span>Piauí:</span>
+					<span id="rp17"></span><br>
+					<input id="cap17" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+
+					<span>Rio de Janeiro:</span>
+					<span id="rp18"></span><br>
+					<input id="cap18" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+				</div>
+				
+				<div class="col-md-4">					
+					<span>Rio Grande do Norte:</span>
+					<span id="rp19"></span><br>
+					<input id="cap19" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+					
+					<span>Rio Grande do Sul:</span>
+					<span id="rp20"></span><br>
+					<input id="cap20" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+					
+					<span>Rondônia:</span>
+					<span id="rp21"></span><br>
+					<input id="cap21" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+					
+					<span>Rorâima:</span>
+					<span id="rp22"></span><br>
+					<input id="cap22" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+
+					<span>Santa Catarina:</span>
+					<span id="rp23"></span><br>
+					<input id="cap23" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br> 
+					
+					<span>São Paulo:</span>
+					<span id="rp24"></span><br>
+					<input id="cap24" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+
+					<span>Sergipe:</span>
+					<span id="rp25"></span><br>
+					<input id="cap25" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+
+					<span>Tocantins:</span>
+					<span id="rp26"></span><br>
+					<input id="cap26" type="text" maxlength=20>
+					<button onclick="capital()" type="button">Enviar</button><br>
+				</div>
+				
+				
+			</div><!--fim do meio-->
+			
+			<div class="row">
+				<div class="col-md-12 terminar">
+					<button onclick="finalizarJogo()" type="button" class="btn btn-lg btn-primary pull-right">TERMINAR JOGO</button>
+				</div>
+			</div>
+		
+		</div><!--fim do container-->
+
+	</body>
+
+</html>
+
+<!--<p id="teste"></p>
+
+<button type="button" id="teste2" onclick="mudartexto()">CLIQUE AQUI</button>-->

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">		
+		<script src="js/jquery.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+
+	<body>
+		<section class="inicioJogo">
+			<h1>Bem-vindo ao Jogo da Forca!</h1>
+			<p>Digite a palavra que deseja usar</p>
+			<form>
+				<input maxlength="18" id="palavra" type="password">
+			</form><br>
+			<a href="#rolarTela" class="rolarTela"><button id="botao" class="btn">Começar</button></a>
+		</section><!-- FIM INICIO JOGO -->
+
+		<section class="jogo">
+			<div class="forca">
+				<div class="cabeca">
+					<img src="images/cabeça.jpg">
+				</div>
+
+				<div class="corpo">
+					<img src="images/corpo.jpg">
+				</div>
+
+				<div class="bracoDireito">
+					<img src="images/braçodireito.jpg">
+				</div>
+
+				<div class="bracoEsquerdo">
+					<img src="images/braçoesquerdo.jpg">
+				</div>
+
+				<div class="pernaDireita">
+					<img src="images/pernadireita.jpg">
+				</div>
+
+				<div class="pernaEsquerda">
+					<img src="images/pernaesquerda.jpg">
+				</div>
+			</div>
+
+			<div class="letras">
+				
+				<div class="escolherLetras">
+					<p>Digite a letra:</p>
+					<form>
+						<input maxlength="1" type="text" id="letraEscolhida">
+					</form><br>
+					<button onclick="letra(document.getElementById('letraEscolhida').value)" class="btn">Enviar</button>
+
+					<button style="margin-left:40px" onclick="revelarPalavra(document.getElementById('palavra').value)" class="btn">Revelar Palavra</button>
+
+					<button style="margin-left:40px" class="btn"><a href="index.html">Reiniciar Jogo</a></button>
+				</div>
+				<div id="rolarTela" class="rolarTela"></div>
+				<div id="posicaoLetras" class="posicaoLetras"></div>
+			</div>
+		</section>
+	</body>
+
+</html>
